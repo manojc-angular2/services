@@ -1,0 +1,25 @@
+<div>
+  <h1>child 1 data (global service)</h1>
+  <table>
+    <tr *ngFor="let name of names">
+      <td>
+        <input type="text" [(ngModel)]="name.name" />
+      </td>
+      <td>
+        {{name.name}}
+      </td>
+    </tr>
+  </table>
+
+  <h1>child 2 data (local service)</h1>
+  <table>
+    <tr *ngFor="let name of ages">
+      <td>
+        <input type="text" [(ngModel)]="name.age" />
+      </td>
+      <td>
+        {{name.age}}
+      </td>
+    </tr>
+  </table>
+</div>
